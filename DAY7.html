@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShamsTIIDELAB</title>
+  </head>
+  <body>
+    <script>
+      let serialNumbers = 1;
+      while (serialNumbers <= 200) {
+        // divisible by 6 to output shams
+        if (serialNumbers % 6 === 0 && serialNumbers % 8 !== 0) {
+          console.log("Shams");
+          // divisible by 8 to output tiidelab
+        } else if (serialNumbers % 8 === 0 && serialNumbers % 6 !== 0) {
+          console.log("TIIDELAB");
+          // dividsible by both to output shamstiidelab
+        } else if (serialNumbers % 6 === 0 && serialNumbers % 8 === 0) {
+          console.log("ShamsTIIDELAB");
+        } else {
+          console.log(serialNumbers);
+        }
+        serialNumbers++;
+      }
+      //     let T = 1;
+      //   while (T <= 50) {
+      //     console.log(T);
+      //     T++;
+      //   }
+    </script>
+  </body>
+</html>
